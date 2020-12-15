@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding 0;
+}
+
+
+.container1 {
+    display: flex;
+    width: 99vw;
+    height: 56vw;
+}
+
+.top-container {
+    width: 100%;
+    height: 110px;
+    /*background-color: rgb(227, 191, 243); /* TEST */
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 50px;
+    /*border: 1px solid red; /* TEST */
+}
+
+.menu i {
+    font-size: 30px;
+}
+
+.logo {
+    width: 280px;
+    margin-left: 40px;
+    /*border: 1px solid red; /* TEST */
+}
+
+.logo > img {
+    width: 100%;
+}
+
+.fb {
+    margin-left: 250px;
+    /*border: 1px solid red; /* TEST */
+}
+
+.fb i {
+    font-size: 30px;
+}
+
+.basket {
+    display: flex;
+    margin-left: 800px;
+    /*border: 1px solid red; /* TEST */
+}
+
+.basket i {
+    font-size: 30px;
+}
+
+.basket p {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+}
+
+.left-content {
+    background-color: #ededed;
+    width: 30%;
+    height: 100%;
+}
+
+.right-content {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+}
+
+.right-content img {
+    width: 100%;
+    height: 100%;
+    padding-top: 110px;
+}
+
+/* TEST */
+.test-only {
+    height: 300px;
+    width: 500px;
+    border: 2px solid cyan;
+    background: darkgoldenrod;
+    margin: auto;
+    text-align: center;
+}
+/* TEST /*
