@@ -65,6 +65,42 @@ body {
     font-weight: 700;
 }
 
+.title-wrapper {
+    position: absolute;
+    top: 320px;
+    left: 170px;
+    /*border: 2px solid red; /*TEST */
+    width: 530px;
+    height: 300px;
+}
+
+.title1 {
+    display: flex;
+}
+
+.title1b {
+   text-transform: uppercase; 
+   padding-left: 25px;
+   font-size: 12px;
+   color: #8b8d8f;
+   font-family: "Maven Pro","Roboto",sans-serif;
+   line-height: 0.4;
+}
+
+.title2 {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Maven Pro","Roboto",sans-serif;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.title3 {
+    font-family: "Maven Pro","Roboto",sans-serif;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
 .left-content {
     background-color: #ededed;
     width: 30%;
