@@ -1,195 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jakub Jurkiewicz">
-    <meta name="description" content="Projekt poświęcony nauce frontend.">
-    <meta name="keywords" content="maseczki, 2020, corona, coronavirus, adam, małysz, adam małysz">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>NaszeMaseczki.pl</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jakub Jurkiewicz" />
+        <meta name="description" content="Projekt poświęcony nauce frontend." />
+        <meta
+            name="keywords"
+            content="maseczki, 2020, corona, coronavirus, adam, małysz, adam małysz"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>NaszeMaseczki.pl</title>
+    </head>
 
-</head>
-
-<body>
-    <div class="main-container">
-        <div class="container1">
-
-            <div class="top-container">
-                <div class="menu">
-                    <a href="#">
-                        <i class="fas fa-bars"></i>
-                    </a>
+    <body>
+        <div class="menu">
+            <div class="menu__nav">
+                <div class="menu__close">
+                    <a onclick="closeMenu()"><i class="fas fa-times"></i></a>
                 </div>
-
-                <div class="logo"> <a href="index.html"> <img src="logo.svg"> </a> </div>
-
-                <div class="fb"> 
-                    <a href="https://www.facebook.com/naszemaseczkipl" target="_blank"> 
-                        <i class="fab fa-facebook-f"> </i> 
-                    </a> 
-                </div>
-
-                <div class="basket">
-                    <a href="#">
-                        <i class="fas fa-cart-plus"></i>
-                        <span>1234.00 PLN</span>
-                    </a>
+                <div class="menu__options">
+                    <ul>
+                        <li><a href="\">Strona główna</a></li>
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Dostawa i płatności</a></li>
+                        <li><a href="#">Zamówienia hurtowe</a></li>
+                        <li><a href="#">Certyfikaty</a></li>
+                        <li><a href="#">O firmie</a></li>
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="title-wrapper">
-                <div class="title1">
-                    <div class="title1a"> <img src="flag_pl.png"> </div>
-                    <div class="title1b"> <p>Polski producent</p> </div>
-                </div>
-                <div class="title2"> Polskie maseczki, chroniące przed wirusami </div>
-                <div class="title3"> Zgodne z Polską Normą PN-EN 14683 </div>
-            </div>
-
-            <div class="left-content"> </div>
-
-            <div class="right-content">
-                <img src="slider_1.jpg">
-            </div>
+            <div class="menu__background"></div>
         </div>
 
+        <header class="header">
+            <button type="button" class="header__button" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
 
-        <div class="container2">
-            <div class="container2-title-wrapper"> 
-                <div class="container2-title"> <p> Nasze maseczki </p> </div> 
+            <div class="header__logo">
+                <a href="\">
+                    <img src="/assets/logo.svg" />
+                </a>
             </div>
 
-            <div class="container2-content-wrapper">
-                <div class="container2-content">
-                    <div class="container2-content-img"> <img src="https://cms.naszemaseczki.pl/userfiles/products/81-1607499002_thumb.png"> </div>
-                    <div class="container2-content-title"> <a href="#" class="bold"> Maseczka ochronna <br> (10szt/opakowanie) </a> </div>
-                    <div class="container2-content-price">
-                        <span>cena brutto</span>
-                        <span class="bold">20,00 PLN</span>
-                    </div>
-                    <div class="buy-container">
-                        <div class="buy"> 
-                            <a href="#">
-                                <span class="bold"> kup teraz </span>
-                            </a>
-                        </div>
-                        <div class="cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container2-content">
-                    <div class="container2-content-img"> <img src="https://cms.naszemaseczki.pl/userfiles/products/81-1607499002_thumb.png"> </div>
-                    <div class="container2-content-title"> <a href="#" class="bold"> Maseczka ochronna typu FFP1 <br> (50szt/opakowanie) </a> </div>
-                    <div class="container2-content-price">
-                        <span>cena brutto</span>
-                        <span class="bold">50,00 PLN</span>
-                    </div>
-                    <div class="buy-container">
-                        <div class="buy"> 
-                            <a href="#">
-                                <span class="bold"> kup teraz </span>
-                            </a>
-                        </div>
-                        <div class="cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container2-content">
-                    <div class="container2-content-img"> <img src="https://cms.naszemaseczki.pl/userfiles/products/81-1607499002_thumb.png"> </div>
-                    <div class="container2-content-title"> <a href="#" class="bold"> Maseczka ochronna <br> (100szt/opakowanie) </a> </div>
-                    <div class="container2-content-price">
-                        <span>cena brutto</span>
-                        <span class="bold">200,00 PLN</span>
-                    </div>
-                    <div class="buy-container">
-                        <div class="buy"> 
-                            <a href="#">
-                                <span class="bold"> kup teraz </span>
-                            </a>
-                        </div>
-                        <div class="cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container2-content">
-                    <div class="container2-content-img"> <img src="https://cms.naszemaseczki.pl/userfiles/products/81-1607499002_thumb.png"> </div>
-                    <div class="container2-content-title"> <a href="#" class="bold"> Maseczka ochronna <br> (200szt/opakowanie) </a> </div>
-                    <div class="container2-content-price">
-                        <span>cena brutto</span>
-                        <span class="bold">250,00 PLN</span>
-                    </div>
-                    <div class="buy-container">
-                        <div class="buy"> 
-                            <a href="#">
-                                <span class="bold"> kup teraz </span>
-                            </a>
-                        </div>
-                        <div class="cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="header__lang">
+                <a href="#">
+                    <span>en</span>
+                </a>
             </div>
-        </div>
 
-
-        <div class="container3">
-            <div class="container3-left"></div>
-            <div class="container3-right">
-                <div class="container3-right-1">
-                    <div class="container3-right-1a"> <img src="flag_pl.png"> </div>
-                    <div class="container3-right-1b"> <h2> Polski Producent </div>
-                </div>
-                <div class="container3-right-2">
-                    <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis nulla, egestas ac nisl eget, rutrum vulputate urna. 
-                    In faucibus tortor eu tristique pellentesque. Curabitur tincidunt bibendum enim vitae placerat. Ut vitae neque urna. Ut 
-                    vitae urna eu elit ullamcorper rutrum sit amet non eros. Praesent pretium turpis id consectetur pulvinar. Sed sit amet consequat 
-                    magna, vel viverra nisl. Vivamus at leo quis mauris pharetra malesuada.</span>
-                   
-                    <br> <br> <br>
-
-                    <span> Aenean blandit, nunc sed lacinia cursus, quam sem placerat metus, ac placerat leo libero ac ante. Proin sem risus, sodales 
-                    sed sapien at, commodo tincidunt justo. Phasellus faucibus urna eu facilisis euismod. Aliquam eu hendrerit enim. Morbi mollis 
-                    eleifend enim, a posuere nulla porttitor at. Donec eget magna felis. Suspendisse potenti. Praesent pretium turpis id consectetur 
-                    pulvinar. Sed sit amet consequat magna, vel viverra nisl. Vivamus at leo quis mauris pharetra malesuada. </span>
-                </div>
-                <div class="container3-right-3">
-                    <span style="font-size: 50px; font-weight: 700;"> 1 000 000 </span>
-                    <br> <br>
-                    <span> Wyprodukowanych maseczek </span>
-                </div>
+            <div class="header__cart">
+                <a href="#"> <i class="fas fa-cart-plus"></i>420.00 PLN </a>
             </div>
-        </div>
+        </header>
 
+        <main>
+            <section class="hero">
+                <div class="hero__background">
+                    <div
+                        class="logo"
+                        style="background-image: url('/assets/slider_1.jpg')"
+                    ></div>
+                </div>
 
-        <div class="container4">
-            <div class="footer-left">
-                <div class="footer-left-content"> <img src="logo.svg"> </div>
-                <div class="footer-left-content">
+                <div class="hero__content">
+                    <div class="manufacturer">
+                        <img src="assets/flag_pl.png" />
+                        <span>Polski producent</span>
+                        <h1>Polskie maseczki, chroniące przed wirusami</h1>
+                        <h2 style="font-weight: 200; margin-top: 15px">
+                            Zgodne z Polską Normą PN-EN 14683
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="products__title__wrapper">
+                    <div class="products__title"><p>Nasze maseczki</p></div>
+                </div>
+
+                <div class="products__content__wrapper" id="productsList"></div>
+            </section>
+
+            <section class="producent">
+                <div class="producent__background"></div>
+                <div class="producent__content">
+                    <div class="producent__content__title">
+                        <img src="assets/flag_pl.png" />
+                        <h2 style="padding-left: 20px">Polski producent</h2>
+                    </div>
+                    <div class="producent__content__text">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean turpis nulla, egestas ac nisl eget,
+                            rutrum vulputate urna. In faucibus tortor eu
+                            tristique pellentesque. Curabitur tincidunt bibendum
+                            enim vitae placerat. Ut vitae neque urna. Ut vitae
+                            urna eu elit ullamcorper rutrum sit amet non eros.
+                            Praesent pretium turpis id consectetur pulvinar. Sed
+                            sit amet consequat magna, vel viverra nisl. Vivamus
+                            at leo quis mauris pharetra malesuada.</span
+                        >
+
+                        <br />
+                        <br />
+                        <br />
+
+                        <span>
+                            Aenean blandit, nunc sed lacinia cursus, quam sem
+                            placerat metus, ac placerat leo libero ac ante.
+                            Proin sem risus, sodales sed sapien at, commodo
+                            tincidunt justo. Phasellus faucibus urna eu
+                            facilisis euismod. Aliquam eu hendrerit enim. Morbi
+                            mollis eleifend enim, a posuere nulla porttitor at.
+                            Donec eget magna felis. Suspendisse potenti.
+                            Praesent pretium turpis id consectetur pulvinar. Sed
+                            sit amet consequat magna, vel viverra nisl. Vivamus
+                            at leo quis mauris pharetra malesuada.
+                        </span>
+                    </div>
+
+                    <div class="producent__content__text2">
+                        <p style="padding-bottom: 20px">1 000 000</p>
+                        <span>Wyprodukowanych maseczek</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__left">
+                <div class="footer__left__content">
+                    <img src="/assets/logo.svg" />
+                </div>
+                <div class="footer__left__content">
                     <p>Europrofil Sp. z o.o.</p>
-                    <p> ul. Zielona 11 </p>
-                    <p> 11-015 Olsztynek </p>
-                    <p> tel. +48 89 512 32 22 </p>
-                    <p> fax: +48 89 512 05 33 </p>
-                    <p> e-mail: sekretariat@europrofil.com</p>
+                    <p>ul. Zielona 11</p>
+                    <p>11-015 Olsztynek</p>
+                    <p>tel. +48 89 512 32 22</p>
+                    <p>fax: +48 89 512 05 33</p>
+                    <p>e-mail: sekretariat@europrofil.com</p>
                 </div>
             </div>
-            <div class="footer-right">
-                <div class="footer-menu">
+            <div class="footer__right">
+                <div class="footer__right__menu">
                     <ul>
                         <li>Informacje</li>
                         <li><a href="#">Czas i koszta dostawy</a></li>
@@ -198,7 +161,7 @@
                         <li><a href="#">Sposoby płatności</a></li>
                     </ul>
                 </div>
-                <div class="footer-menu">
+                <div class="footer__right__menu">
                     <ul>
                         <li>Sklep</li>
                         <li><a href="#">Regulamin</a></li>
@@ -207,10 +170,16 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-down"> <p>&copy; Copyright 2020 naszemaseczki.pl</p> </div>
-        </div>
-    </div>
+            <div class="footer__bottom">
+                <span>&copy; Copyright 2020 naszemaseczki.pl</span>
+            </div>
+        </footer>
 
-    <script src="https://kit.fontawesome.com/d17255c83c.js" crossorigin="anonymous"></script>
-</body>
+        <script
+            src="https://kit.fontawesome.com/d17255c83c.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="/scripts.js"></script>
+    </body>
 </html>
