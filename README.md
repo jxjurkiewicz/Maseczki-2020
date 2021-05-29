@@ -1,1 +1,4 @@
-//ONLY FOR EDUCATION PURPOSES.
+# Projekt pokazowy
+
+VSCode extenstions:
+Live Server
